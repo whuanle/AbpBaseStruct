@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AbpBase.Application.Contracts\AbpBase.Application.Contracts.csproj" />
+    <ProjectReference Include="..\AbpBase.Database\AbpBase.Database.csproj" />
+    <ProjectReference Include="..\AbpBase.Domain\AbpBase.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
