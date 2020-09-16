@@ -39,6 +39,9 @@ namespace AbpBase.Web
 
             // 全局 API 请求实体验证失败信息格式化
             context.Services.GlabalInvalidModelStateFilter();
+
+            // 配置依赖注入服务
+            ConfigureAutoIoc(context);
         }
 
         /// <summary>
@@ -55,6 +58,17 @@ namespace AbpBase.Web
                         .AllowAnyOrigin());
             });
         }
+
+        /// <summary>
+        /// 自动扫描所有的服务并进行依赖注入
+        /// </summary>
+        /// <param name="context"></param>
+        private void ConfigureAutoIoc(ServiceConfigurationContext context)
+        {
+            context.Services.AddAssemblyOf<AbpBaseApplicationModule>();
+            context.Services.AddAssemblyOf<AbpBaseWebModule>();
+        }
+
 
         public override void OnApplicationInitialization(
             ApplicationInitializationContext context)

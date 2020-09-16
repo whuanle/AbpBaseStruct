@@ -36,5 +36,14 @@ namespace ApbBase.HttpApi.Controllers
         {
             return "请求完成";
         }
+
+        [HttpGet("/T4")]
+        public string MyWebApi4()
+        {
+            int a = 1;
+            int b = 0;
+            int c = a / b;
+            return c.ToString();
+        }
     }
 }

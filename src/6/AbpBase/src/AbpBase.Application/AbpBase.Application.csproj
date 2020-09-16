@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog.AspNetCore" Version="3.4.0" />
+    <PackageReference Include="Serilog.Sinks.Async" Version="1.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AbpBase.Application.Contracts\AbpBase.Application.Contracts.csproj" />
+    <ProjectReference Include="..\AbpBase.Database\AbpBase.Database.csproj" />
+    <ProjectReference Include="..\AbpBase.Domain\AbpBase.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
