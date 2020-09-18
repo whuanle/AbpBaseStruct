@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AbpBase.Application\AbpBase.Application.csproj" />
-    <ProjectReference Include="..\ApbBase.HttpApi\ApbBase.HttpApi.csproj" />
+    <ProjectReference Include="..\AbpBase.HttpApi\AbpBase.HttpApi.csproj" />
   </ItemGroup>
 
 </Project>
